@@ -105,7 +105,7 @@
         "name": "Luigi",
         "homeland": "Mushroom Kingdom",
         "favorite_color": "Green",
-        "image": "./assets/images/Luigi.png"
+        "image": "assets/images/Luigi.png"
       },
       {
         "character_id": 3,
@@ -147,7 +147,7 @@
         "name": "Bowser",
         "homeland": "Koopa Kingdom",
         "favorite_color": "Yellow",
-        "image": "macrisconstantine/mario-database/blob/main/assets/images/Bowser.png"
+        "image": "assets/images/Bowser.png"
       }
     ],
     "more_info": [
