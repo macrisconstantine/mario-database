@@ -147,7 +147,7 @@
         "name": "Bowser",
         "homeland": "Koopa Kingdom",
         "favorite_color": "Yellow",
-        "image": "resources/images/Bowser.png"
+        "image": "https://github.com/macrisconstantine/mario-database/blob/main/assets/images/Bowser.png"
       }
     ],
     "more_info": [
