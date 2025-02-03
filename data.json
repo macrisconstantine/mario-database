@@ -105,49 +105,49 @@
         "name": "Luigi",
         "homeland": "Mushroom Kingdom",
         "favorite_color": "Green",
-        "image": "main/assets/images/Luigi.png"
+        "image": "assets/images/Luigi.png"
       },
       {
         "character_id": 3,
         "name": "Peach",
         "homeland": "Mushroom Kingdom",
         "favorite_color": "Pink",
-        "image": "/resources/images/Peach.png"
+        "image": "assets/images/Peach.png"
       },
       {
         "character_id": 7,
         "name": "Yoshi",
         "homeland": "Dinosaur Land",
         "favorite_color": "Green",
-        "image": "/resources/images/Yoshi.png"
+        "image": "assets/images/Yoshi.png"
       },
       {
         "character_id": 6,
         "name": "Daisy",
         "homeland": "Sarasaland",
         "favorite_color": "Orange",
-        "image": "/resources/images/Daisy.png"
+        "image": "assets/images/Daisy.png"
       },
       {
         "character_id": 1,
         "name": "Mario",
         "homeland": "Mushroom Kingdom",
         "favorite_color": "Red",
-        "image": "/resources/images/Mario.png"
+        "image": "assets/images/Mario.png"
       },
       {
         "character_id": 4,
         "name": "Toad",
         "homeland": "Mushroom Kingdom",
         "favorite_color": "Blue",
-        "image": "resources/images/Toad.png"
+        "image": "assets/images/Toad.png"
       },
       {
         "character_id": 5,
         "name": "Bowser",
         "homeland": "Koopa Kingdom",
         "favorite_color": "Yellow",
-        "image": "https://github.com/macrisconstantine/mario-database/blob/main/assets/images/Bowser.png"
+        "image": "assets/images/Bowser.png"
       }
     ],
     "more_info": [
