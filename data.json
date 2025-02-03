@@ -1,0 +1,247 @@
+{
+    "actions": [
+      {
+        "action_id": 1,
+        "action": "run"
+      },
+      {
+        "action_id": 2,
+        "action": "jump"
+      },
+      {
+        "action_id": 3,
+        "action": "duck"
+      }
+    ],
+    "character_actions": [
+      {
+        "character_id": 7,
+        "action_id": 1
+      },
+      {
+        "character_id": 7,
+        "action_id": 2
+      },
+      {
+        "character_id": 7,
+        "action_id": 3
+      },
+      {
+        "character_id": 6,
+        "action_id": 1
+      },
+      {
+        "character_id": 6,
+        "action_id": 2
+      },
+      {
+        "character_id": 6,
+        "action_id": 3
+      },
+      {
+        "character_id": 5,
+        "action_id": 1
+      },
+      {
+        "character_id": 5,
+        "action_id": 2
+      },
+      {
+        "character_id": 5,
+        "action_id": 3
+      },
+      {
+        "character_id": 4,
+        "action_id": 1
+      },
+      {
+        "character_id": 4,
+        "action_id": 2
+      },
+      {
+        "character_id": 4,
+        "action_id": 3
+      },
+      {
+        "character_id": 3,
+        "action_id": 1
+      },
+      {
+        "character_id": 3,
+        "action_id": 2
+      },
+      {
+        "character_id": 3,
+        "action_id": 3
+      },
+      {
+        "character_id": 2,
+        "action_id": 1
+      },
+      {
+        "character_id": 2,
+        "action_id": 2
+      },
+      {
+        "character_id": 2,
+        "action_id": 3
+      },
+      {
+        "character_id": 1,
+        "action_id": 1
+      },
+      {
+        "character_id": 1,
+        "action_id": 2
+      },
+      {
+        "character_id": 1,
+        "action_id": 3
+      }
+    ],
+    "characters": [
+      {
+        "character_id": 2,
+        "name": "Luigi",
+        "homeland": "Mushroom Kingdom",
+        "favorite_color": "Green",
+        "image": "/resources/images/luigi.png"
+      },
+      {
+        "character_id": 3,
+        "name": "Peach",
+        "homeland": "Mushroom Kingdom",
+        "favorite_color": "Pink",
+        "image": "/resources/images/Peach.png"
+      },
+      {
+        "character_id": 7,
+        "name": "Yoshi",
+        "homeland": "Dinosaur Land",
+        "favorite_color": "Green",
+        "image": "/resources/images/Yoshi.png"
+      },
+      {
+        "character_id": 6,
+        "name": "Daisy",
+        "homeland": "Sarasaland",
+        "favorite_color": "Orange",
+        "image": "/resources/images/Daisy.png"
+      },
+      {
+        "character_id": 1,
+        "name": "Mario",
+        "homeland": "Mushroom Kingdom",
+        "favorite_color": "Red",
+        "image": "/resources/images/Mario.png"
+      },
+      {
+        "character_id": 4,
+        "name": "Toad",
+        "homeland": "Mushroom Kingdom",
+        "favorite_color": "Blue",
+        "image": "resources/images/Toad.png"
+      },
+      {
+        "character_id": 5,
+        "name": "Bowser",
+        "homeland": "Koopa Kingdom",
+        "favorite_color": "Yellow",
+        "image": "resources/images/Bowser.png"
+      }
+    ],
+    "more_info": [
+      {
+        "more_info_id": 1,
+        "birthday": "1981-07-09",
+        "height_in_cm": 155,
+        "weight_in_kg": 64.5,
+        "character_id": 1
+      },
+      {
+        "more_info_id": 2,
+        "birthday": "1983-07-14",
+        "height_in_cm": 175,
+        "weight_in_kg": 48.8,
+        "character_id": 2
+      },
+      {
+        "more_info_id": 3,
+        "birthday": "1985-10-18",
+        "height_in_cm": 173,
+        "weight_in_kg": 52.2,
+        "character_id": 3
+      },
+      {
+        "more_info_id": 4,
+        "birthday": "1950-01-10",
+        "height_in_cm": 66,
+        "weight_in_kg": 35.6,
+        "character_id": 4
+      },
+      {
+        "more_info_id": 5,
+        "birthday": "1990-10-29",
+        "height_in_cm": 258,
+        "weight_in_kg": 300.0,
+        "character_id": 5
+      },
+      {
+        "more_info_id": 6,
+        "birthday": "1989-07-31",
+        "height_in_cm": null,
+        "weight_in_kg": null,
+        "character_id": 6
+      },
+      {
+        "more_info_id": 7,
+        "birthday": "1990-04-13",
+        "height_in_cm": 162,
+        "weight_in_kg": 59.1,
+        "character_id": 7
+      }
+    ],
+    "sounds": [
+      {
+        "sound_id": 1,
+        "filename": "its-a-me.wav",
+        "character_id": 1
+      },
+      {
+        "sound_id": 2,
+        "filename": "yippee.wav",
+        "character_id": 1
+      },
+      {
+        "sound_id": 3,
+        "filename": "ha-ha.wav",
+        "character_id": 2
+      },
+      {
+        "sound_id": 4,
+        "filename": "oh-yeah.wav",
+        "character_id": 2
+      },
+      {
+        "sound_id": 5,
+        "filename": "yay.wav",
+        "character_id": 3
+      },
+      {
+        "sound_id": 6,
+        "filename": "woo-hoo.wav",
+        "character_id": 3
+      },
+      {
+        "sound_id": 7,
+        "filename": "mm-hmm.wav",
+        "character_id": 3
+      },
+      {
+        "sound_id": 8,
+        "filename": "yahoo.wav",
+        "character_id": 1
+      }
+    ]
+  }
+  

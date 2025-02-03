@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Database Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+        font-family: 'Press Start 2P', monospace;
+      justify-content: center;
+      align-items: baseline;
+      min-height: 100vh;
+      background-color: #000000;
+      font-size: 12px;
+    }
+    
+    h1, h2 {
+        text-align: center;
+    }
+    
+    h1 {
+        position: fixed;
+        text-align: center;
+        font-size: 48px;
+        width: 100%;
+        z-index: -1;
+        font-family: 'Press Start 2P', monospace;
+        width: 100%;
+        letter-spacing: 2px;
+        color: transparent;
+        background: linear-gradient(to left, #ff0000, #00ff00);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+
+    .carousel {
+        display: -webkit-inline-box;
+        gap: 50px;
+        padding: 20px;
+        padding-top: 17vh;
+        justify-content: center;
+    }
+
+    .character {
+      padding: 10px;
+      background-color: rgb(0, 0, 0, 0);
+      width: 275px; 
+      box-sizing: border-box;
+      border-radius: 10px;
+      text-align: left;
+      transition: transform 0.3s ease, color 0.3s ease;;
+    }
+    
+    .character:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+        color: white;
+    }
+
+    .character img {
+        object-fit: cover;
+        height: 300px;
+      border-radius: 10px;
+      margin-top: -40px;
+      overflow-x: visible;
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 80px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      border-radius: 10px;
+    }
+
+    .carousel::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+    <h1>THE MARIO BROS. UNIVERSE</h1>
+    <div class="carousel" id="characters"></div>
+
+  <script>
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        const characterList = document.getElementById('characters');
+
+        data.characters.forEach(character => {
+          const characterDiv = document.createElement('div');
+          characterDiv.classList.add('character');
+          
+          
+          // Display character image
+          const imageElement = document.createElement('img');
+          imageElement.src = character.image;
+          imageElement.alt = character.name;
+          characterDiv.appendChild(imageElement);
+          
+          const nameElement = document.createElement('h2');
+          nameElement.textContent = character.name;
+          characterDiv.appendChild(nameElement);
+          // Display character homeland and favorite color
+          const homelandElement = document.createElement('p');
+          homelandElement.textContent = `Homeland: ${character.homeland}`;
+          characterDiv.appendChild(homelandElement);
+          
+          const colorElement = document.createElement('p');
+          colorElement.textContent = `Favorite Color: ${character.favorite_color}`;
+          characterDiv.appendChild(colorElement);
+
+          // Fetch and display more info
+          const moreInfo = data.more_info.find(info => info.character_id === character.character_id);
+          if (moreInfo) {
+            const moreInfoElement = document.createElement('p');
+            moreInfoElement.textContent = `Birthday: ${moreInfo.birthday}, Height: ${moreInfo.height_in_cm} cm, Weight: ${moreInfo.weight_in_kg} kg`;
+            characterDiv.appendChild(moreInfoElement);
+          }
+
+          // Display actions
+          const actionsDiv = document.createElement('div');
+          actionsDiv.classList.add('actions');
+          const characterActions = data.character_actions.filter(ca => ca.character_id === character.character_id);
+          characterActions.forEach(ca => {
+            const action = data.actions.find(a => a.action_id === ca.action_id);
+            if (action) {
+              const actionElement = document.createElement('p');
+              actionElement.textContent = `Action: ${action.action}`;
+              actionsDiv.appendChild(actionElement);
+            }
+          });
+          characterDiv.appendChild(actionsDiv);
+
+          // Display sounds
+          const soundsDiv = document.createElement('div');
+          soundsDiv.classList.add('sounds');
+          const characterSounds = data.sounds.filter(s => s.character_id === character.character_id);
+          characterSounds.forEach(s => {
+            const soundElement = document.createElement('p');
+            soundElement.textContent = `Sound: ${s.filename}`;
+            soundsDiv.appendChild(soundElement);
+          });
+          characterDiv.appendChild(soundsDiv);
+          
+          // Append character info to the list
+          characterList.appendChild(characterDiv);
+        });
+      })
+      .catch(error => console.error('Error loading data:', error));
+  </script>
+</body>
+</html>
