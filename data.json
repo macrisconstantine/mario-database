@@ -105,7 +105,7 @@
         "name": "Luigi",
         "homeland": "Mushroom Kingdom",
         "favorite_color": "Green",
-        "image": "assets/images/Luigi.png"
+        "image": "./assets/images/Luigi.png"
       },
       {
         "character_id": 3,
