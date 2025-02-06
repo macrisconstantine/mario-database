@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://macrisconstantine.github.io/mario-database/">
-    <img src="https://github.com/user-attachments/assets/84a91555-87d9-4565-96d2-752b7700a1e2" alt="image" style="border-radius:30px;">
-  </a>
-</p>
+[![image](https://github.com/user-attachments/assets/84a91555-87d9-4565-96d2-752b7700a1e2)](https://macrisconstantine.github.io/mario-database/)
 # mario-database
 This project's output is a simple database that holds a small collection of tables with data on various Mario characters consisting of 5 tables:
 - The `characters` table stores some basic information and `character_id` for each of of the characters in the database.
