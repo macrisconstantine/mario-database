@@ -8,4 +8,4 @@ This project's output is a simple database that holds a small collection of tabl
 - The `sounds` table stores a collection of sounds that can be connected to any of the characters.
 ## webpage
 To visit the webpage, click on the image at the top of this `README.md`.
-<br><br>After making the database, I wanted some way to show the data. But GitHub Pages only allows for static sites (no databases allowed). Turns out a database can be transformed into a JSON file, which can be fed to an HTML page, even in a static site. So I did this, and was quite happy with the result. 
+<br><br>After making the database, I wanted some way to show the data. But GitHub Pages only allows for static sites (no databases allowed). It out that a database can be transformed into a JSON file, which can be fed to an HTML page, even in a static site. So I did this, and was quite happy with the result. 
