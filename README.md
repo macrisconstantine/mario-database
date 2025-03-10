@@ -1,6 +1,6 @@
 [![image](https://github.com/user-attachments/assets/84a91555-87d9-4565-96d2-752b7700a1e2)](https://macrisconstantine.github.io/mario-database/)
 # mario-database
-This project's output is a simple database that holds a small collection of tables with data on various Mario characters consisting of 5 tables:
+This project's output is a simple database of 5 tables that holds a small collection of data on various Mario characters:
 - The `characters` table stores some basic information and `character_id` for each of of the characters in the database.
 - The `more_info` table stores additional attribute information about each character (i.e. `height`, `weight`, etc.).
 - The `actions` table stores all the possible actions any given character can perform (i.e. `run`, `jump`, etc.).
